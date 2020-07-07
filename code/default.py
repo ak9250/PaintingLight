@@ -1,8 +1,9 @@
 import cv2
 import sys
+import numpy 
 
 def defaultrun(images):
-    image = cv2.imread(images)
+    image = numpy.array(images)
     mask = None
 
     ambient_intensity = 0.45
