@@ -6,6 +6,6 @@ spec:
     cpu: False
     gpu: True    
 build_steps:
-    - pip install runway-python tensorflow scipy==1.1.0 trimesh==2.37.1 rtree==0.9.3 opencv-contrib-python h5py
+    - pip install runway-python tensorflow scipy==1.1.0 trimesh==2.37.1 opencv-contrib-python h5py
     - if_cpu: pip install tensorflow
     - if_gpu: pip install tensorflow-gpu==1.4.0
