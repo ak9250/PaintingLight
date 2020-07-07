@@ -6,8 +6,7 @@ spec:
     cpu: False
     gpu: True    
 build_steps:
-    - apt install libspatialindex-dev
+    - apt install libspatialindex-dev -Y
     - pip install runway-python tensorflow scipy==1.1.0 trimesh==2.37.1 opencv-contrib-python h5py rtree==0.9.3 opencv-python
     - if_cpu: pip install tensorflow
     - if_gpu: pip install tensorflow-gpu==1.15
-    
