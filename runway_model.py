@@ -11,7 +11,7 @@ def setup(opts):
     pass 
     
 @runway.command('translate', inputs={'image': runway.image}, outputs={'image': runway.image})
-def translate(dt, inputs):
+def translate(net,inputs):
     print("Starting")
     output = dt.defaultrun(inputs['image'])
     print("Done")
