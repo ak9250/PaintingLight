@@ -15,7 +15,7 @@ def translate(net,inputs):
     print("Starting")
     output = dt.defaultrun(inputs['image'])
     print("Done")
-    return Image.fromarray(output.astype(np.uint8))
+    return Image.fromarray(np.clip(output,0, 255).astype(np.uint8))
 
 if __name__ == '__main__':
     runway.run(port=8889)
