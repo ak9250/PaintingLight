@@ -208,6 +208,7 @@ def run(image, mask, ambient_intensity, light_intensity, light_source_height, ga
         canvas = np.concatenate([raw_image, rendered_image], axis=1).clip(0, 255).astype(np.uint8)
         #cv2.imshow('Move your mouse on the canvas to play!', canvas)
         #cv2.setMouseCallback('Move your mouse on the canvas to play!', update_mouse)
-        cv2.waitKey(10)
+        #cv2.waitKey(10)
+        break
 
     return rendered_image
