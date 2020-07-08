@@ -211,4 +211,4 @@ def run(image, mask, ambient_intensity, light_intensity, light_source_height, ga
         #cv2.waitKey(10)
         break
 
-    return rendered_image
+    return canvas
