@@ -13,7 +13,7 @@ from scipy.spatial import ConvexHull
 from cv2.ximgproc import createGuidedFilter
 
 
-#assert tf.__version__ == '1.4.0'
+assert tf.__version__ == '1.4.0'
 assert scipy.__version__ == '1.1.0'
 assert trimesh.__version__ == '2.37.1'
 assert rtree.__version__ == '0.9.3'
