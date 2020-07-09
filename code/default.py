@@ -28,5 +28,6 @@ def defaultrun(images):
         gamma_correction, stroke_density_clipping, light_color_red, light_color_green,
         light_color_blue, enabling_multiple_channel_effects)
 
-    return cv2.cvtColor(imageout, cv2.COLOR_BGR2RGB)
+    imgcv2 = cv2.cvtColor(imageout, cv2.COLOR_BGR2RGB)
+    return imgcv2
 
