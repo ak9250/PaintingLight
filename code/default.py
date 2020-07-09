@@ -4,7 +4,9 @@ import numpy
 
 
 def defaultrun(images):
-    image = cv2.cvtColor(numpy.array(images), cv2.COLOR_BGR2RGB)
+    # image = cv2.cvtColor(numpy.array(images), cv2.COLOR_BGR2RGB)
+    image = numpy.array(images)
+    image = image[..., ::-1]
 
     mask = None
 
@@ -27,7 +29,10 @@ def defaultrun(images):
     imageout = run(image, mask, ambient_intensity, light_intensity, light_source_height,
         gamma_correction, stroke_density_clipping, light_color_red, light_color_green,
         light_color_blue, enabling_multiple_channel_effects)
+    
 
     #imgcv2 = cv2.cvtColor(imageout, cv2.COLOR_BGR2RGB)
+    imageout = imageout[..., ::-1]
+    
     return imageout
 
