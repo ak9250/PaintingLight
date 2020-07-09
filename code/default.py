@@ -1,10 +1,12 @@
 import sys
 from cv2 import cvtColor, COLOR_BGR2RGB
-from numpy import array
+import numpy
 
 
 def defaultrun(images):
-    image = cvtColor(array(images), COLOR_BGR2RGB)
+    image = numpy.array(images) 
+    # Convert RGB to BGR 
+    image = image[:, :, ::-1].copy() 
 
     mask = None
 
