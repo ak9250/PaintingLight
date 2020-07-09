@@ -24,10 +24,10 @@ assert rtree.__version__ == '0.9.3'
 session = tf.Session()
 tf.keras.backend.set_session(session)
 ip3 = tf.placeholder(dtype=tf.float32, shape=(None, None, None, 3))
-srcnn = tf.keras.models.load_model('srcnn.net')
+srcnn = tf.keras.models.load_model('code/srcnn.net')
 srcnn_op = srcnn(tf.pad(ip3 / 255.0, [[0, 0], [16, 16], [16, 16], [0, 0]], 'REFLECT'))[:, 16:-16, 16:-16, :] * 255.0
 session.run(tf.global_variables_initializer())
-srcnn.load_weights('srcnn.net')
+srcnn.load_weights('code/srcnn.net')
 
 
 # Global position of light source.
