@@ -4,9 +4,9 @@ import numpy
 
 
 def defaultrun(images):
-    image = numpy.array(images) 
-    # Convert RGB to BGR 
-    image = image[:, :, ::-1].copy() 
+    image = cv2.cvtColor(numpy.array(images), cv2.COLOR_RGB2BGR)
+
+
 
     mask = None
 
