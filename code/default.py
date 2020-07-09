@@ -1,9 +1,11 @@
-import cv2
 import sys
-import numpy 
+from cv2 import cvtColor, COLOR_BGR2RGB
+from numpy import array
+
 
 def defaultrun(images):
-    image = numpy.array(images)
+    image = cvtColor(array(images), COLOR_BGR2RGB)
+
     mask = None
 
     ambient_intensity = 0.45
@@ -19,6 +21,7 @@ def defaultrun(images):
 
 
     from code.ProjectPaintingLight2 import run
+    
 
 
     imageout = run(image, mask, ambient_intensity, light_intensity, light_source_height,
