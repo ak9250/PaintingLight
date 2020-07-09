@@ -1,11 +1,10 @@
 import sys
-from cv2 import cvtColor, COLOR_BGR2RGB
+import cv2
 import numpy
 
 
 def defaultrun(images):
     image = cv2.cvtColor(numpy.array(images), cv2.COLOR_RGB2BGR)
-
 
 
     mask = None
