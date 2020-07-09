@@ -4,7 +4,7 @@ import numpy
 
 
 def defaultrun(images):
-    image = cv2.cvtColor(numpy.array(images), cv2.COLOR_RBG2BGR)
+    image = cv2.cvtColor(numpy.array(images), cv2.COLOR_RGB2BGR)
 
     mask = None
 
