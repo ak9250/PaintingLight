@@ -18,7 +18,7 @@ def defaultrun(images):
     light_color_blue = 1.0
 
 
-    from code.ProjectPaintingLight import run
+    from code.ProjectPaintingLight2 import run
 
 
     imageout = run(image, mask, ambient_intensity, light_intensity, light_source_height,
