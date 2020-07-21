@@ -6,6 +6,8 @@ Because digital painting illumination data is not easy to obtain, this algorithm
 
 Note that the project is still in its technical researching stage. If you are a digital painting artist and you accidentally find this page, you may have to wait for our ongoing PhotoShop plug-in for practical usage.
 
+[![Open in RunwayML Badge](https://open-app.runwayml.com/gh-badge.svg)](https://open-app.runwayml.com/?model=akhaliq/PaintingLight)
+
 # Technical Paper
 
 Please refer to our [project page](https://lllyasviel.github.io/PaintingLight/) for our TOG/SIGGRAPH paper. 
